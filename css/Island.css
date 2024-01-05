@@ -1,0 +1,203 @@
+* {
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+body {
+    margin: 0;
+    background-color: #00bafd;
+    animation-name: Sky;
+    overflow-y: hidden;
+}
+
+.sun {
+    width: 250px;
+    height: 250px;
+    background-color: rgb(255, 215, 38);
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    border-radius: 50%;
+    z-index: -1;
+    animation-name: Sun;
+    animation-timing-function: ease-in-out;
+}
+
+.moon {
+    width: 250px;
+    height: 250px;
+    background-color: white;
+    position: absolute;
+    top: 95%;
+    left: 25%;
+    border-radius: 50%;
+    z-index: -1;
+    animation-name: Moon;
+    animation-timing-function: ease-in-out;
+}
+
+.water {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background-color: #1779db;
+    animation-name: Wota;
+    animation-delay: -33%;
+}
+
+.land {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 800px;
+    height: 175px;
+    background-color: #159a43;
+    border-radius: 100%;
+    animation-name: Land;
+    animation-delay: 33%;
+}
+
+/* 
+.fire {
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 40px;
+    height: 40px;
+    transform: skew(-40deg, -10deg) rotate(45deg, 45deg);
+    background: linear-gradient(10deg, red, red, orange);
+    border-radius: 10px;
+} */
+
+
+
+@keyframes Sky {
+    0% {
+        background-color: #00bafd;
+    }
+
+    40% {
+        background-color: #00bafd;
+    }
+
+    50% {
+        background-color: #0f0026;
+    }
+
+    90% {
+        background-color: #0f0026;
+    }
+
+    100% {
+        background-color: #00bafd;
+    }
+
+}
+
+@keyframes Wota {
+    0% {
+        background-color: #1779db;
+    }
+
+    40% {
+        background-color: #1779db;
+    }
+
+    50% {
+        background-color: #1f0944;
+    }
+
+    90% {
+        background-color: #1f0944;
+    }
+
+    100% {
+        background-color: #1779db;
+    }
+
+}
+
+@keyframes Land {
+    0% {
+        background-color: #159a43;
+
+    }
+
+    40% {
+        background-color: #159a43;
+
+    }
+
+    50% {
+        background-color: #14311f;
+    }
+
+    90% {
+        background-color: #14311f;
+    }
+
+    100% {
+        background-color: #159a43;
+
+    }
+
+}
+
+
+@keyframes Sun {
+    0% {
+        top: 15%;
+    }
+
+    20% {
+        top: 15%;
+    }
+
+    41% {
+        top: 15.0%;
+        box-shadow: 0 0 25px 2.5px rgb(255, 196, 48);
+
+    }
+
+    45% {
+        top: 95%;
+    }
+
+    95% {
+        top: 95%;
+    }
+
+    98% {
+        top: 15%;
+    }
+}
+
+@keyframes Moon {
+    0% {
+        top: 95%;
+    }
+
+    45% {
+        top: 95%;
+    }
+
+    49% {
+        top: 15%;
+    }
+
+    91% {
+        top: 15%;
+        box-shadow: 0 0 15px 0.5px white;
+    }
+
+    95% {
+        top: 95%;
+        box-shadow: 0 0 0px 0px white;
+    }
+}
